@@ -285,6 +285,14 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span id="busuanzi_value_page_pv"></span>
     </span>
+    <span id="/2016/04/first-article/" class="post-meta-item twikoo_visitors" data-flag-title="用Hexo+Github Page搭建博客成功~" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="twikoo_visitors"></span>
+    </span>
+  
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
         <i class="far fa-file-word"></i>
@@ -405,7 +413,7 @@
 
 
 
-    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81Mjk2Mi8yOTQzOQ=="></div>
+    <div class="comments"><div id="twikoo-comments"></div></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -500,20 +508,13 @@
 
 
 
-
 <script>
-NexT.utils.loadComments('#lv-container', () => {
-  window.livereOptions = {
-    refer: "2016/04/first-article/"
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
+NexT.utils.loadComments('#twikoo-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js', () => {
+    twikoo.init(Object.assign({"enable":true,"visitor":true,"envId":"hello-cloudbase-1g6y9j0tbcc34d2a"}, {
+      el: '#twikoo-comments'
+    }));
+  }, window.twikoo);
 });
 </script>
 
