@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>GeekYutu.com</title>
+  <icon>https://geekyutu.com/icon.png</icon>
+  <subtitle>极客玉兔</subtitle>
+  <link href="https://geekyutu.com/atom.xml" rel="self"/>
+  
+  <link href="https://geekyutu.com/"/>
+  <updated>2021-04-11T08:23:10.597Z</updated>
+  <id>https://geekyutu.com/</id>
+  
+  <author>
+    <name>吃不胖的兔爷</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>why-react-hooks</title>
+    <link href="https://geekyutu.com/2021/04/why-react-hooks/"/>
+    <id>https://geekyutu.com/2021/04/why-react-hooks/</id>
+    <published>2021-04-09T08:04:54.000Z</published>
+    <updated>2021-04-11T08:23:10.597Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;非可视逻辑&lt;/li&gt;
+&lt;li&gt;如果组件具有状态或需要使用生命周期方法，则必须使用类(class component)。否则，如果它只是接受 props 并渲染一些</summary>
+        
+      
+    
+    
+    
+    
+    <category term="react" scheme="https://geekyutu.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>重新出发</title>
+    <link href="https://geekyutu.com/2021/03/restart/"/>
+    <id>https://geekyutu.com/2021/03/restart/</id>
+    <published>2021-03-16T13:57:56.000Z</published>
+    <updated>2021-03-17T03:41:11.001Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2021年，家庭发生了比较大的变故，关心我的小小伙伴应该已经知道了&lt;/p&gt;
+&lt;p&gt;上一次更新是5年前，写点什么好呢？&lt;br&gt;我想就以我与父亲的故事开始吧。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用Hexo+Github Page搭建博客成功~</title>
+    <link href="https://geekyutu.com/2016/04/first-article/"/>
+    <id>https://geekyutu.com/2016/04/first-article/</id>
+    <published>2016-04-13T15:22:18.000Z</published>
+    <updated>2021-03-16T07:19:50.399Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;锵锵锵锵~~~&lt;br&gt;花花丹的第一个正式Blog终于搭建完毕。&lt;/p&gt;
+&lt;p&gt;很早以前用CSDN写文章的时候，就下定决心要给自己建个网站。&lt;br&gt;暂时还没有购买域名和服务器的打算，感觉免费的Github Page已经够用啦~&lt;/p&gt;
+&lt;p&gt;一开始呢，自己是一点一点写静态HTML页面，一个布局就能coding好久好久……&lt;br&gt;后来发现这种方法太慢了，而且后期维护也不太方便。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://geekyutu.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="杂谈" scheme="https://geekyutu.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+</feed>
