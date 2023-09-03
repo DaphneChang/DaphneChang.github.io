@@ -21,23 +21,23 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"geekyutu.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"geekyutu.cn","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 <meta name="description" content="非可视逻辑 如果组件具有状态或需要使用生命周期方法，则必须使用类(class component)。否则，如果它只是接受 props 并渲染一些 UI，我们可以直接使用一个函数搞定(funciton)。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="why-react-hooks">
-<meta property="og:url" content="https://geekyutu.com/2021/04/why-react-hooks/index.html">
-<meta property="og:site_name" content="GeekYutu.com">
+<meta property="og:url" content="https://geekyutu.cn/2021/04/why-react-hooks/index.html">
+<meta property="og:site_name" content="GeekYutu.cn">
 <meta property="og:description" content="非可视逻辑 如果组件具有状态或需要使用生命周期方法，则必须使用类(class component)。否则，如果它只是接受 props 并渲染一些 UI，我们可以直接使用一个函数搞定(funciton)。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-09T08:04:54.000Z">
-<meta property="article:modified_time" content="2021-04-11T08:23:10.597Z">
-<meta property="article:author" content="吃不胖的兔爷">
+<meta property="article:modified_time" content="2023-09-03T12:40:08.074Z">
+<meta property="article:author" content="吃不胖的兔宝">
 <meta property="article:tag" content="react">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://geekyutu.com/2021/04/why-react-hooks/">
+<link rel="canonical" href="https://geekyutu.cn/2021/04/why-react-hooks/">
 
 
 <script class="page-configurations">
@@ -49,7 +49,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>why-react-hooks | GeekYutu.com</title>
+<title>why-react-hooks | GeekYutu.cn</title>
   
 
 
@@ -90,7 +90,7 @@
   </style>
 </noscript>
 
-<link rel="alternate" href="/atom.xml" title="GeekYutu.com" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="GeekYutu.cn" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -111,7 +111,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">GeekYutu.com</h1>
+      <h1 class="site-title">GeekYutu.cn</h1>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">极客玉兔</p>
@@ -168,17 +168,17 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="吃不胖的兔爷"
+    <img class="site-author-image" itemprop="image" alt="吃不胖的兔宝"
       src="/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">吃不胖的兔爷</p>
-  <div class="site-description" itemprop="description">coding / 尤克里里 / 养兔子 / 面相</div>
+  <p class="site-author-name" itemprop="name">吃不胖的兔宝</p>
+  <div class="site-description" itemprop="description">enfp / bunny / music / coding</div>
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
         <a href="https://github.com/DaphneChang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DaphneChang" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:me@geekyutu.com" title="Email → mailto:me@geekyutu.com"><i class="fa fa-envelope fa-fw"></i>Email</a>
+        <a href="mailto:geekyutu@qq.com" title="Email → mailto:geekyutu@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://www.linkedin.com/in/devzhangdan/" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;devzhangdan&#x2F;" rel="noopener" target="_blank"><i class="fab fa-linkedin fa-fw"></i>Linkedin</a>
@@ -238,16 +238,16 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://geekyutu.com/2021/04/why-react-hooks/">
+    <link itemprop="mainEntityOfPage" href="https://geekyutu.cn/2021/04/why-react-hooks/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="吃不胖的兔爷">
-      <meta itemprop="description" content="coding / 尤克里里 / 养兔子 / 面相">
+      <meta itemprop="name" content="吃不胖的兔宝">
+      <meta itemprop="description" content="enfp / bunny / music / coding">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="GeekYutu.com">
+      <meta itemprop="name" content="GeekYutu.cn">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -323,11 +323,11 @@
   </button>
   <div class="post-reward">
       <div>
-        <img src="/images/wechatpay.png" alt="吃不胖的兔爷 微信">
+        <img src="/images/wechatpay.png" alt="吃不胖的兔宝 微信">
         <span>微信</span>
       </div>
       <div>
-        <img src="/images/alipay.jpg" alt="吃不胖的兔爷 支付宝">
+        <img src="/images/alipay.jpg" alt="吃不胖的兔宝 支付宝">
         <span>支付宝</span>
       </div>
 
@@ -427,11 +427,11 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">吃不胖的兔爷</span>
+  <span class="author" itemprop="copyrightHolder">吃不胖的兔宝</span>
 </div>
 <div class="wordcount">
   <span class="post-meta-item">
